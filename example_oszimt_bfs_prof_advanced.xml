@@ -115,7 +115,7 @@
                 <grade>
                     <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.5</numericScore>
                 </grade>
-                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary"/>
             </assessment>
 
             <!-- Assessment: en -->
@@ -379,7 +379,7 @@
         <!-- TODO: Properly add info -->
         <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:final">
             <description>
-                <text content-type="text/plain" lang="de">Abschlussprüfung</text>
+                <text content-type="text/plain" lang="de">Abschlussprüfung gemäß § 27 bis $ 50 APO-BFS</text>
             </description>
             <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/presential"></mode>
             <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
@@ -408,7 +408,7 @@
         <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:preliminary">
             <!-- TODO: change grading scheme to proper value -->
             <description>
-                <text content-type="text/plain" lang="de">Vornote bestehend aus dem Halbjahresdurchschnitt der im Rahmen der Ausbildung erbrachten Leistungen  gemäß §37 APO-BFS</text>
+                <text content-type="text/plain" lang="de">Vornote bestehend aus dem Halbjahresdurchschnitt der im Rahmen der Ausbildung erbrachten Leistungen gemäß §37 APO-BFS</text>
             </description>
             <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/workbased"></mode>
             <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
@@ -427,7 +427,8 @@
             <supplementaryDoc uri="https://www.dqr.de/en/2316.php?LANG=ENG&amp;PID=5&amp;QT1=4&amp;SQ=564"></supplementaryDoc>
             <type uri="http://data.europa.eu/europass/entitlementType/occupation" />
             <status uri="http://data.europa.eu/europass/entitlementStatus/actual" />
-            <mayResultFrom idref="urn:de:berlin:schule:bfs:assessment:final" />
+
+            <mayResultFrom idref="urn:de:berlin:schule:bfs:qualification:ita" />
         </entitlementSpecification>
     </entitlementSpecificationReferences>
     <agentReferences>
@@ -529,7 +530,7 @@
 		  ]]>
                 </text>
             </description>
-            <supplementaryDoc uri="http://gesetze.berlin.de/jportal/?quelle%3Djlink%26query%3DBerFSchulAPrO%2BBE%26psml%3Dbsbeprod.psml%26max%3Dtrue%26aiz%3Dtrue" />
+            <supplementaryDoc uri="http://gesetze.berlin.de/jportal/?quelle=jlink&amp;query=BerFSchulAPrO+BE&amp;psml=bsbeprod.psml&amp;max=true&amp;aiz=true" />
         </scoringScheme>
     </scoringSchemeReferences>
     <proof />
