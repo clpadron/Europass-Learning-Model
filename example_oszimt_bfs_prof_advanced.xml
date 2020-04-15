@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<europassCredential xmlns="http://data.europa.eu/europass/model/credentials#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eup="http://data.europa.eu/europass/model/credentials#" xsi:schemaLocation="http://data.europa.eu/europass/model/credentials# edci_credential.xsd" xsdVersion="0.4.0" id="urn:de:berlin:schule:08b04:uuid:02539375-3572-4d24-9324-26af63430352">
+    <!-- ISSUE: consider a type qualificationSupplement as this would be the VET representation of diplomaSupplemnt in the EUROPASS directive -->
+    <type uri="http://data.europa.eu/europass/credentialType/qualification" />
+    <!-- ISSUE: why is a time required here? -->
+    <issuanceDate>2018-08-16T11:13:35</issuanceDate>
+    <issuer idref="urn:de:berlin:schule:08b04" />
+    <title lang="de">Abschlusszeugnis der Berufsfachschule</title>
+    <title lang="en">Leaving certificate of full-time vocational school</title>
+    <description>
+        <text lang="de" content-type="text/plain">Abschlusszeugnis der Berufsfachschule</text>
+    </description>
+    <description>
+        <text lang="en" content-type="text/plain">Leaving certificate of full-time vocational school</text>
+    </description>
+    <credentialSubject id="urn:de:berlin:schule:08b04:uuid:c134acdf-509b-4e3d-a0fa-b07b334d7016">
+        <!-- ISSUE: Consider removing required attribute nationalId as mandatory, there is no such identifier in Germany (unique German personal tax identifier must not use for other purposes than individual tax payments) -->
+        <!-- leaving stub to properly validate against XSD 0.4.0 -->
+        <nationalId spatialID="http://publications.europa.eu/resource/authority/country/DEU" />
+        <fullName lang="de">Maximilian Ralf Mustermann</fullName>
+        <givenNames lang="de">Maximilian Ralf</givenNames>
+        <familyName lang="de">Mustermann</familyName>
+        <dateOfBirth>2001-02-01</dateOfBirth>
+        <placeOfBirth>
+            <name lang="de">Berlin</name>
+        </placeOfBirth>
+        <gender uri="http://publications.europa.eu/resource/authority/human-sex/MALE" />
+        <citizenshipCountry uri="http://publications.europa.eu/resource/authority/country/DEU" />
+        <achievements>
+            <qualificationAward id="urn:de:berlin:schule:08b04:qualification:ita">
+                <title lang="de">Informationstechnischer Assistent, Schwerpunkt Informations- und Telekommunikationssysteme</title>
+                <additionalNote>
+                    <text lang="de" content-type="text/html">
+                        <![CDATA[ 
+                    <p>Herr <b>Maximilian Ralf Mustermann</b>, geboren am 01.02.2001 in Berlin, hat die Berufsfachschule Informationstechnische/r Assistent/-in
+                    vom 05.09.2016 bis 08.06.2019 besucht. Er hat die Abschlussprüfung der Berufsfachschule bestanden und ist damit berechtigt, die Berufsbezeichnung
+                    <b>Informationstechnischer Assistent</b> zu führen.</p>
+                    <p>Dem Zeugnis liegt zugrunde:</p>
+                    <ul>
+                        <li>die Ausbildungs- und Prüfungsverordnung (APO-BFS) in der jeweils geltenden Fassung,</li>
+                        <li>die „Rahmenvereinbarung über die Berufsfachschulen“ (Beschluss der Kultusministerkonferenz vom 17.10.2013 in der jeweils geltenden Fassung).</li>
+                    </ul>              
+                    ]]>
+                    </text>
+                </additionalNote>
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:ap" />
+                <specifiedBy idref="urn:de:berlin:schule:bfs:qualification:ita" />
+            </qualificationAward>
+        </achievements>
+        <assessments>
+            <!-- TODO: consider moving the "overall" assessment to be a qualificationAward? Would require much more detailed content to fullfill XSD -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:ap">
+                <title lang="de">Abschlussprüfung der Berufsfachschule</title>
+                <description>
+                    <text lang="de" content-type="text/plain">Abschlussprüfung der Berufsfachschule nach Ausbildungs- und Prüfungsverordnung für die Berufsfachschulen des Landes Berlin (Berufsfachschulverordnung - APO-BFS) vom 14. Juli 2009</text>
+                </description>
+                <additionalNote>
+                    <text lang="de" content-type="text/plain">Der Schüler hat erfolgreich an der fachpraktischen Ausbildung teilgenommen. Während der Ausbildung wurde ein achtwöchiges Betriebspraktikum im europäischen Ausland erfolgreich absolviert.</text>
+                    <subject uri="http://data.europa.eu/esco/qualification-topics#assessment" />
+                </additionalNote>
+                <!-- ISSUE / TODO: Why is this required? There could be assessments which are not graded (i.e. only attendance required) Or what would be a better type? entitlement/qualificationAward? -->
+                <!-- leaving stub to properly validate against XSD 0.4.0 -->
+                <grade>
+                    <textScore>bestanden</textScore>
+                </grade>
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:de" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:wsk" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:en" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:ma" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:its" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:bp" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:as" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:pits" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:pbp" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:pas" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:ph" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:wdit" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:final:sp" />
+            </assessment>
+            <!-- Assessment: de -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:de">
+                <title lang="de">Deutsch / Kommunikation</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:written:de" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:de" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:written:de">
+                <title lang="de">Deutsch / Kommunikation</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:written" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:de">
+                <title lang="de">Deutsch / Kommunikation</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: wsk -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:wsk">
+                <title lang="de">Wirtschafts- und Sozialkunde</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2</numericScore>
+                </grade>
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:wsk" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:wsk">
+                <title lang="de">Wirtschafts- und Sozialkunde</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: en -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:en">
+                <title lang="de">Englisch</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:written:en" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:en" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:written:en">
+                <title lang="de">Englisch</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:written" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:en">
+                <title lang="de">Englisch</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4.0</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: ma -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:ma">
+                <title lang="de">Mathematik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:written:ma" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:ma" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:written:ma">
+                <title lang="de">Mathematik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:written" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:ma">
+                <title lang="de">Mathematik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">1.8</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: its -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:its">
+                <title lang="de">Informations- und Telekommunikationssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:written:its" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:its" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:written:its">
+                <title lang="de">Informations- und Telekommunikationssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:written" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:its">
+                <title lang="de">Informations- und Telekommunikationssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3.5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: ma -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:bp">
+                <title lang="de">Betriebswirtschaftliche Prozesse</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:written:bp" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:bp" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:written:bp">
+                <title lang="de">Betriebswirtschaftliche Prozesse</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:written" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:bp">
+                <title lang="de">Betriebswirtschaftliche Prozesse</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3.2</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: as -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:as">
+                <title lang="de">Anwendungssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:written:as" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:as" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:written:as">
+                <title lang="de">Anwendungssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:written" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:as">
+                <title lang="de">Anwendungssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: pits -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:pits">
+                <title lang="de">Laborprojekt Informations- u. Telekommunikationssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:practical:pits" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:pits" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:practical:pits">
+                <title lang="de">Laborprojekt Informations- u. Telekommunikationssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:practical" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:pits">
+                <title lang="de">Laborprojekt Informations- u. Telekommunikationssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4.1</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: pbp -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:pbp">
+                <title lang="de">Laborprojekt Betriebswirtschaftliche Prozesse</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:pbp" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:pbp">
+                <title lang="de">Deutsch / Kommunikation</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">4.2</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: pas -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:pas">
+                <title lang="de">Laborprojekt Anwendungssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:pas" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:pas">
+                <title lang="de">Laborprojekt Anwendungssysteme</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.1</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: ph -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:ph">
+                <title lang="de">Physik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:ph" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:ph">
+                <title lang="de">Physik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: wdit -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:wdit">
+                <title lang="de">Werkstoffe der IT-Technik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:wdit" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:wdit">
+                <title lang="de">Werkstoffe der IT-Technik</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">2.5</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+            <!-- Assessment: sp -->
+            <assessment id="urn:de:berlin:schule:08b04:assessment:final:sp">
+                <title lang="de">Sport / Gesundheitsförderung</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:final" />
+                <wasDerivedFrom idref="urn:de:berlin:schule:08b04:assessment:preliminary:sp" />
+            </assessment>
+            <assessment id="urn:de:berlin:schule:08b04:assessment:preliminary:sp">
+                <title lang="de">Sport / Gesundheitsförderung</title>
+                <grade>
+                    <numericScore schemeID="urn:de:berlin:schule:bfs:endnoten">3</numericScore>
+                </grade>
+                <specifiedBy idref="urn:de:berlin:schule:bfs:assessment:preliminary" />
+            </assessment>
+
+        </assessments>
+    </credentialSubject>
+    <learningSpecificationReferences>
+        <qualification id="urn:de:berlin:schule:bfs:qualification:ita">
+            <type uri="http://data.europa.eu/europass/learningOpportunityType/educationalProgram"></type>
+            <title lang="de">
+            Informationstechnische/r Assistent/in, Schwerpunkt Informations- und Telekommunikationssysteme
+          </title>
+            <!-- TODO: Add a meaningful description -->
+            <description>
+                <text lang="de" content-type="text/plain"></text>
+            </description>
+            <!-- ISSUE: supplementaryDoc should be also language specific -->
+            <supplementaryDoc uri="https://www.dqr.de/en/2316.php?LANG=ENG&amp;PID=5&amp;QT1=4&amp;SQ=564"></supplementaryDoc>
+            <learningSettingType uri="http://data.europa.eu/europass/learningSettingType/formal" />
+            <entryRequirementsNote>
+                <text lang="de" content-type="text/plain">Mittlerer Schulabschluss (MSA)</text>
+            </entryRequirementsNote>
+            <assessmentSpecification idref="urn:de:berlin:schule:bfs:assessment:final" />
+            <eqfLevel uri="http://data.europa.eu/esco/eqf/4" />
+        </qualification>
+    </learningSpecificationReferences>
+    <assessmentSpecificationReferences>
+        <!-- TODO: Properly add info -->
+        <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:final">
+            <description>
+                <text content-type="text/plain" lang="de">Abschlussprüfung</text>
+            </description>
+            <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/presential"></mode>
+            <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
+        </assessmentSpecification>
+        <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:written">
+            <description>
+                <text content-type="text/plain" lang="de">Schriftliche Prüfung gemäß § 38 bis § 40 APO-BFS</text>
+            </description>
+            <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/presential"></mode>
+            <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
+        </assessmentSpecification>
+        <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:oral">
+            <description>
+                <text content-type="text/plain" lang="de">Mündliche Prüfung gemäß § 43 und § 44 APO-BFS</text>
+            </description>
+            <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/presential"></mode>
+            <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
+        </assessmentSpecification>
+        <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:practical">
+            <description>
+                <text content-type="text/plain" lang="de">Praktische Prüfung gemäß § 41 APO-BFS</text>
+            </description>
+            <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/presential"></mode>
+            <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
+        </assessmentSpecification>
+        <assessmentSpecification id="urn:de:berlin:schule:bfs:assessment:preliminary">
+            <!-- TODO: change grading scheme to proper value -->
+            <description>
+                <text content-type="text/plain" lang="de">Vornote bestehend aus dem Halbjahresdurchschnitt der im Rahmen der Ausbildung erbrachten Leistungen  gemäß §37 APO-BFS</text>
+            </description>
+            <mode uri="http://data.europa.eu/europass/modeOfLearningAndAssessment/workbased"></mode>
+            <gradingScheme idref="urn:de:berlin:schule:bfs:endnoten" />
+        </assessmentSpecification>
+    </assessmentSpecificationReferences>
+    <entitlementSpecificationReferences>
+        <entitlementSpecification id="urn:de:berlin:schule:bfs:entitlement:ita">
+            <title lang="de">
+            Informationstechnische/r Assistent/in, Schwerpunkt Informations- und Telekommunikationssysteme
+          </title>
+            <!-- TODO: Add a meaningful description -->
+            <description>
+                <text lang="de" content-type="text/plain">Der/die Inhaber/in ist berechtigt, die Berufsbezeichnung Staatlich geprüfte informationstechnische Assistentin btw. Staatlich geprüfter informationstechnischer Assistent zu führen.</text>
+            </description>
+            <!-- ISSUE: supplementaryDoc should be also language specific -->
+            <supplementaryDoc uri="https://www.dqr.de/en/2316.php?LANG=ENG&amp;PID=5&amp;QT1=4&amp;SQ=564"></supplementaryDoc>
+            <type uri="http://data.europa.eu/europass/entitlementType/occupation" />
+            <status uri="http://data.europa.eu/europass/entitlementStatus/actual" />
+            <mayResultFrom idref="urn:de:berlin:schule:bfs:assessment:final" />
+        </entitlementSpecification>
+    </entitlementSpecificationReferences>
+    <agentReferences>
+        <organization id="urn:de:berlin:schule:08b04">
+            <!-- ISSUE: Why is this required? Tried to adept to a regional example using Berlin Senate's of Education, Youth and Family internal BSN identifier / unique on state level -->
+            <registration schemeID="http://schule.berlin.de/bsn" schemeAgencyName="Senatsverwaltug für Bildung, Jugend und Familie" spatialID="http://publications.europa.eu/resource/authority/country/DEU">08B04</registration>
+            <type uri="http://data.europa.eu/esco/agent-type#academic-institution" />
+            <prefLabel lang="de">OSZ Informations- und Medizintechnik</prefLabel>
+            <altLabel lang="de">Oberstufenzentrum Informations- und Medizintechnik</altLabel>
+            <homepage uri="https://www.oszimt.de" />
+            <hasLocation>
+                <hasAddress>
+                    <fullAddress>
+                        <text lang="de" content-type="text/plain">Haarlemer Str. 23-27, D-12359 Berlin</text>
+                    </fullAddress>
+                    <country uri="http://publications.europa.eu/resource/authority/country/DEU" />
+                </hasAddress>
+                <spatialCode uri="http://publications.europa.eu/resource/authority/country/DEU" />
+            </hasLocation>
+            <contactPoint>
+                <phone>
+                    <phoneNumber>+49 30 225027 800</phoneNumber>
+                </phone>
+            </contactPoint>
+        </organization>
+    </agentReferences>
+    <scoringSchemeReferences>
+        <scoringScheme id="urn:de:berlin:schule:bfs:endnoten">
+            <title lang="de">Endnote gemäß § 45 i.V.m. Anlage 4a APO-BFS</title>
+            <description>
+                <text lang="de" content-type="text/html">
+                    <![CDATA[
+<table style="border-collapse:collapse" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr>
+<td style="border:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">
+<strong>Note</strong>
+</p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">
+<strong>
+                    erzielte Bewertungseinheiten
+                    <br>
+                    (in %)
+                  </strong>
+</p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">1 (sehr gut)</p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">≥ 85</p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">2 (gut)</p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">≥ 70</p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">3 (befriedigend)</p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">≥ 55</p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">4 (ausreichend)</p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">≥ 45</p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">5 (mangelhaft)</p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">≥ 9</p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">6 (ungenügend)</p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt;padding:5.65pt 2.0pt 5.65pt 2.0pt" valign="top">
+<p style="text-align:center" align="center">&lt; 9</p>
+</td>
+</tr>
+</tbody></table>
+		  ]]>
+                </text>
+            </description>
+            <supplementaryDoc uri="http://gesetze.berlin.de/jportal/?quelle%3Djlink%26query%3DBerFSchulAPrO%2BBE%26psml%3Dbsbeprod.psml%26max%3Dtrue%26aiz%3Dtrue" />
+        </scoringScheme>
+    </scoringSchemeReferences>
+    <proof />
+</europassCredential>
